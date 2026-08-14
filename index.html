@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <div class="logo-box">SV</div>
+            <h2>Soni Coaching classes</h2>
+        </div>
+        <nav id="nav-menu">
+            <a href="#">Features</a>
+            <a href="#">AI Suite</a>
+            <a href="#">Portals</a>
+            <a href="#">Tech Stack</a>
+        </nav>
+
+        <button class="login-btn">
+            Login Portal <span>→</span>
+        </button>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </header>
+    <script>
+        function toggleMenu() {
+            document.getElementById("nav-menu").classList.toggle("show");
+        }
+    </script>
+    <!-- hero section=== -->
+    <section class="hero">
+
+        <div class="tool-content">
+            <div class="hero-badge">
+                ✨ &nbsp; Powered by Llama 3 AI & Next.js 16
+            </div>
+            <h1>The <span class="color1"> Smartest Way </span> to Run
+                a Coaching Institute</h1>
+            <p class="hero-text">
+                Automate attendance, collect fees online, solve student doubts with AI voice assistants,
+                <br>
+                generate PDF report cards, and manage everything from a single premium dashboard.
+            </p>
+            <div class="hero-buttons">
+
+                <button class="Started-btn">
+                    Get Started — It's Free
+                    <span>→</span>
+                </button>
+                <button class="Explore-btn">
+                    Explore Features
+                    <span>›</span>
+                </button>
+
+                <div class="hero-stats">
+
+                    <div class="stat">
+                        <h3 class="heading2">5+</h3>
+                        <p class="para1">Role Portals</p>
+                    </div>
+
+                    <div class="stat">
+                        <h3 class="heading2">30+</h3>
+                        <p class="para1">Feature Modules</p>
+                    </div>
+
+                    <div class="stat">
+                        <h3 class="heading2">6</h3>
+                        <p class="para1">AI Tools</p>
+                    </div>
+
+                    <div class="stat">
+                        <h3 class="heading2">32+</h3>
+                        <p class="para1">Automated Tests</p>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+    <section class="features">
+        <div class="card-container">
+            <h2 class="heading3">Everything a Coaching Institute Needs</h2>
+            <p class="para3">From student enrollment to fee collection to AI-powered doubt solving — all in one
+                platform, no
+                third- <br />
+                party tools required.</p>
+
+            <div class="features-container">
+                <!-- 1 -->
+                <div class="card">
+                    <i class="fa-solid fa-user-group"></i>
+                    <h3>Student Management
+                    </h3>
+                    <p>Enroll students, assign batches, track profiles, parent links, and academic history with powerful
+                        search and filters.</p>
+                </div>
+
+                <!-- 2 -->
+                <div class="card">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <h3>Attendance Tracking
+                    </h3>
+                    <p>
+                        Mark daily attendance per batch. Auto-absent cron jobs, leave request workflows, and
+                        low-attendance
+                        alerts to parents.
+                    </p>
+                </div>
+                <!-- 3 -->
+                <div class="card">
+                    <i class="fa-regular fa-credit-card"></i>
+                    <h3>Fee & Payment Engine
+                    </h3>
+                    <p>
+                        Auto-generate monthly invoices, track partial payments, overdue alerts, Razorpay integration,
+                        and
+                        printable PDF receipts.
+                    </p>
+                </div>
+                <!-- 4 -->
+                <div class="card">
+                    <i class="fa-regular fa-book-open"></i>
+                    <h3>Task & Homework
+                    </h3>
+                    <p>
+                        Assign batch tasks with deadlines. Students submit files. Teachers review with AI auto-grading
+                        rubrics and feedback.
+                    </p>
+                </div>
+                <!-- 5 -->
+                <div class="card">
+                    <i class="fa-regular fa-bell"></i>
+                    <h3>Announcements & Notifications
+                    </h3>
+                    <p>
+                        Publish notices, send bulk emails, and push browser notifications. AI beautifies rough drafts
+                        into
+                        professional bulletins.
+                    </p>
+                </div>
+                <!-- 6 -->
+                <div class="card">
+                    <i class="fa-solid fa-chart-column"></i>
+
+                    <h3>Reports & Analytics
+                    </h3>
+                    <p>
+                        Recharts-powered dashboards with revenue trends, collection rates, attendance heatmaps, and
+                        student
+                        performance charts.
+                    </p>
+                </div>
+
+                <!-- 7 -->
+                <div class="card">
+                    <i class="fa-solid fa-display"></i>
+                    <h3>Media Library (Cloudinary)
+                    </h3>
+                    <p>
+                        Upload lecture videos, study PDFs, and images organized by batch or course. Streamed via
+                        Cloudinary
+                        CDN.
+                    </p>
+                </div>
+                <!-- 8 -->
+                <div class="card">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h3>Role-Based Security
+                    </h3>
+                    <p>
+                        6-tier RBAC: Super Admin, Admin, Staff, Teacher, Student, Parent. Middleware-enforced route
+                        protection and Redis rate limiting.
+                    </p>
+                </div>
+
+                <!-- 9 -->
+                <div class="card">
+                    <i class="fa-solid fa-globe"></i>
+                    <h3>PWA & Mobile Ready
+                    </h3>
+                    <p>
+                        Installable as a mobile app from the browser. Web push notifications, offline-ready service
+                        worker,
+                        responsive on all devices.
+                    </p>
+                </div>
+            </div>
+    </section>
+
+    <section class="Tools">
+
+
+        <div class="tool-content">
+            <div class="tool-badge">
+                🧠 &nbsp; Powered by Llama-3
+            </div>
+            <h2 class="heading4">Next-Gen AI Tools Build In</h2>
+            <p class="hero-text">
+                Not just a Management tool- an intelligent assistant that speaks, sees, reviews code, and
+                <br>
+                generates reports.
+            </p>
+
+
+            <div class="Tool-container">
+                <!-- 1 -->
+                <div class="card1">
+                    <i class="fa-solid fa-microphone"></i>
+                    <h3>Voice Assistant (STT/TTS)
+                    </h3>
+                    <p>Students speak their doubts; AI responds in text and voice. Auto-speak toggle lets them control
+                        when AI talks.</p>
+                </div>
+
+                <!-- 2 -->
+                <div class="card1">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <h3>OCR Vision Solver
+                    </h3>
+                    <p>
+                        Upload photos of handwritten equations or diagrams. Llama-3-Vision interprets and solves
+                        step-by-step.
+                    </p>
+                </div>
+                <!-- 3 -->
+                <div class="card1">
+                    <i class="fa-solid fa-file-code"></i>
+                    <h3>Code Review Sandbox
+                    </h3>
+                    <p>
+                        Paste JS, Python, C++, or SQL. Get bug analysis, Big-O complexity, and a voice-enabled follow-up
+                        chat thread.
+                    </p>
+                </div>
+                <!-- 4 -->
+                <div class="card1">
+                    <i class="fa-solid fa-bell"></i>
+                    <h3>PDF Report Card
+                    </h3>
+                    <p>
+                        Generate branded academic evaluations with coaching letterhead, student grids, and signature
+                        lines. Print-ready.
+                    </p>
+                </div>
+                <!-- 5 -->
+                <div class="card1">
+                    <i class="fa-solid fa-note-sticky"></i>
+                    <h3>Smart Notice Drafter
+                    </h3>
+                    <p>
+                        Type a rough outline. AI expands it into a polished, formatted coaching bulletin with emojis and
+                        bullet points.
+                    </p>
+                </div>
+                <!-- 6 -->
+                <div class="card1">
+                    <i class="fa-solid fa-graduation-cap"></i>
+
+                    <h3>Study Plan Generate
+                    </h3>
+                    <p>
+                        AI analyzes attendance patterns and lowest task scores to generate a personalized weekly study
+                        roadmap.
+                    </p>
+                </div>
+            </div>
+    </section>
+
+    <section class="fourth">
+        <div class="card4-container">
+            <h2 class="heading3">Everything a Coaching Institute Needs</h2>
+            <p class="para3">From student enrollment to fee collection to AI-powered doubt solving — all in one
+                platform, no
+                third- <br />
+                party tools required.</p>
+
+            <div class="fourth-container">
+
+                <!-- 1 -->
+                <div class="admin-card">
+                    <h3 class="heading4">Admin</h3>
+                    <ul class="card-list">
+                        <li><i class="fa-regular fa-circle-check"></i> Student & Teacher CRUD</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Fee Generation & Collection</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Recharts Revenue Dashboards</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Activity Audit Logs</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Email & Announcement Broadcast</li>
+                    </ul>
+                </div>
+
+                <!-- 2 -->
+
+                <div class=" teacher-card">
+                    <h3 class="heading4">Teacher</h3>
+                    <ul class="card-list">
+                        <li><i class="fa-regular fa-circle-check"></i> Batch Management</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Mark Attendance</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Assign & Grade Tasks</li>
+                    <li><i class="fa-regular fa-circle-check"></i> AI Auto-Grading Rubrics</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Upload Lecture Videos</li>
+                    </ul>
+                </div>
+                <!-- 3 -->
+
+                <div class=" student-card ">
+                    <h3 class="heading4">Student</h3>
+                    <ul class="card-list">
+                       <li><i class="fa-regular fa-circle-check"></i> AI Doubt Solver Chat</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Voice & Vision Homework Help</li>
+                    <li><i class="fa-regular fa-circle-check"></i> View Attendance & Marks</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Submit Tasks Online</li>
+                    <li><i class="fa-regular fa-circle-check"></i> AI Code Review Sandbox</li>
+                    </ul>
+                </div>
+
+                <!-- 4 -->
+
+                <div class=" psrent-card">
+                    <h3 class="heading4">Psrent</h3>
+                    <ul class="card-list">
+                        <li><i class="fa-regular fa-circle-check"></i> Child Progress Overview</li>
+                    <li><i class="fa-regular fa-circle-check"></i> PDF Report Card Download</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Fee Payment History</li>
+                    <li><i class="fa-regular fa-circle-check"></i> Attendance Alerts</li>
+                    <li><i class="fa-regular fa-circle-check"></i> AI Study Plan Generator</li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+
+    <section class="five-section">
+      <div class="card5-container">
+         <h2 class="heading3">Built with Modern Tech</h2>
+            <p class="para3">Production-grade architecture with type safety, automated testing, and CI/CD pipelines.</p>
+      </div>
+        
+<!-- 1 -->
+ <div class="main-five">
+      <div class="five">
+          <h3 class="heading3">Next.js 16</h3>
+          <p class="para3">App Router</p>
+      </div>
+      <!-- 2 -->
+
+      <div class="five">
+          <h3 class="heading3">React 19</h3>
+          <p class="para3">Server Components</p>
+      </div>
+      <!-- 3 -->
+             <div class="five">
+          <h3 class="heading3">TypeScript</h3>
+          <p class="para3">Full Type Safety</p>
+      </div>
+      <!-- 4 -->
+             <div class="five">
+          <h3 class="heading3">PostgreSQL</h3>
+          <p class="para3">Neon / Supabase</p>
+      </div>
+      <!-- 5 -->
+             <div class="five">
+          <h3 class="heading3">Prisma 7</h3>
+          <p class="para3">Type-Safe ORM</p>
+      </div>
+      <!-- 6 -->
+             <div class="five">
+          <h3 class="heading3">NextAuth v5</h3>
+          <p class="para3">Authentication</p>
+      </div>
+      <!-- 7 -->
+             <div class="five">
+          <h3 class="heading3">Redis</h3>
+          <p class="para3">Rate Limiting</p>
+      </div>
+      <!-- 8 -->
+             <div class="five">
+          <h3 class="heading3">Groq AI</h3>
+          <p class="para3">Llama-3 + Vision</p>
+      </div>
+      <!-- 9 -->
+             <div class="five">
+          <h3 class="heading3">Recharts</h3>
+          <p class="para3">Data Visualization</p>
+      </div>
+      <!-- 10 -->
+        <div class="five">
+          <h3 class="heading3">Cloudinary</h3>
+          <p class="para3">Media CDN</p>
+      </div>
+      <!-- 11 -->
+       <div class="five">
+          <h3 class="heading3">TailwindCSS 4</h3>
+          <p class="para3">Utility-First CSS</p>
+      </div>
+      <!-- 12 -->
+        <div class="five">
+          <h3 class="heading3">Groq AI</h3>
+          <p class="para3">E2E Testing</p>
+      </div>
+    </div>
+    </section>
+
+    <section class="rating-container">
+
+       <div class="rate-heading">
+        <h2>Trusted by Coaching Institutes</h2>
+       </div>
+
+     <div class="review">
+
+        <div class="rating">
+            <p class="icon">⭐⭐ ⭐⭐ ⭐</p>
+            <p class="para4">"The AI doubt solver has reduced our WhatsApp query load by 80%. Students get instant answers at midnight before exams."</p>
+            <div class="main-dp">
+              <p class="dp">S</p>
+              <h4>Soni Verma</h4>
+              <p class="info">Director, Excel Academy</p>
+            </div>
+        </div>
+
+        <div class="rating">
+            <p class="icon">⭐⭐ ⭐⭐ ⭐</p>
+            <p class="para4">"Fee collection used to take 3 days of manual tracking. Now it's automated with SMS reminders and online payments."</p>
+            <div class="main-dp">
+              <p class="dp">S</p>
+              <h4>Shreya vaerma</h4>
+              <p class="info">Owner, Patel Coaching Centre</p>
+            </div>
+        </div>
+
+        
+        <div class="rating">
+            <p class="icon">⭐⭐ ⭐⭐ ⭐</p>
+            <p class="para4">"Parents love the branded PDF report cards. It makes our small coaching center look as professional as a big institute."</p>
+            <div class="main-dp">
+              <p class="dp">S</p>
+              <h4>Siya Verma</h4>
+              <p class="info">Teacher, Sunrise Classes</p>
+            </div>
+        </div>
+     </div>
+    </section>
+
+
+    <!-- footer -->
+    <section class="cta-section">
+    <div class="cta-card">
+
+        <i class="fa-solid fa-bolt"></i>
+
+        <h2>Ready to Transform Your Coaching Institute?</h2>
+
+        <p>
+            Join the next generation of smart coaching centers.
+            Set up in minutes, not months.
+        </p>
+
+        <button class="cta-btn">
+            Start Now — Free Setup
+            <span>→</span>
+        </button>
+
+    </div>
+</section>
+</body>
+
+</html>
