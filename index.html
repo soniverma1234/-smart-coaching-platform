@@ -4,6 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta
+  name="description"
+  content="Soni Coaching Classes provides AI-powered learning, attendance tracking, fee management, and smart student portals."
+>
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,7 +17,8 @@
         href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-    <title>Document</title>
+    <title>Smart Learning Platform</title>
+    <link rel="icon" href="favicon.png">
 </head>
 
 <body>
@@ -20,16 +27,16 @@
             <div class="logo-box">SV</div>
             <h2>Soni Coaching classes</h2>
         </div>
-        <nav id="nav-menu">
-            <a href="#">Features</a>
-            <a href="#">AI Suite</a>
-            <a href="#">Portals</a>
-            <a href="#">Tech Stack</a>
+        <nav id="nav-menu" class="nav-menu">
+            <a href="#features">Features</a>
+            <a href="#tools">AI Suite</a>
+            <a href="#portals">Portals</a>
+            <a href="#tech-stack">Tech Stack</a>
         </nav>
 
-        <button class="login-btn">
-            Login Portal <span>→</span>
-        </button>
+        <a href="login.html" class="login-btn">
+            Login Portal
+        </a>
         <button class="menu-btn" onclick="toggleMenu()">☰</button>
     </header>
     <script>
@@ -53,14 +60,13 @@
             </p>
             <div class="hero-buttons">
 
-                <button class="Started-btn">
+                <a href="login.html" class="Started-btn">
                     Get Started — It's Free
-                    <span>→</span>
-                </button>
-                <button class="Explore-btn">
+                </a>
+                <a href="#features" class="Explore-btn">
                     Explore Features
-                    <span>›</span>
-                </button>
+                     <span>›</span>
+                </a>
 
                 <div class="hero-stats">
 
@@ -68,7 +74,7 @@
                         <h3 class="heading2">5+</h3>
                         <p class="para1">Role Portals</p>
                     </div>
-
+                   
                     <div class="stat">
                         <h3 class="heading2">30+</h3>
                         <p class="para1">Feature Modules</p>
@@ -88,7 +94,7 @@
             </div>
     </section>
 
-    <section class="features">
+    <section class="features" id="features">
         <div class="card-container">
             <h2 class="heading3">Everything a Coaching Institute Needs</h2>
             <p class="para3">From student enrollment to fee collection to AI-powered doubt solving — all in one
@@ -198,14 +204,14 @@
             </div>
     </section>
 
-    <section class="Tools">
+    <section class="Tools" id="tools">
 
 
         <div class="tool-content">
             <div class="tool-badge">
                 🧠 &nbsp; Powered by Llama-3
             </div>
-            <h2 class="heading4">Next-Gen AI Tools Build In</h2>
+            <h2 class="heading4">Next-Gen AI Tools Built In</h2>
             <p class="hero-text">
                 Not just a Management tool- an intelligent assistant that speaks, sees, reviews code, and
                 <br>
@@ -267,7 +273,7 @@
                 <div class="card1">
                     <i class="fa-solid fa-graduation-cap"></i>
 
-                    <h3>Study Plan Generate
+                    <h3>Study Plan Generator
                     </h3>
                     <p>
                         AI analyzes attendance patterns and lowest task scores to generate a personalized weekly study
@@ -277,13 +283,10 @@
             </div>
     </section>
 
-    <section class="fourth">
+    <section class="fourth" id="portals">
         <div class="card4-container">
-            <h2 class="heading3">Everything a Coaching Institute Needs</h2>
-            <p class="para3">From student enrollment to fee collection to AI-powered doubt solving — all in one
-                platform, no
-                third- <br />
-                party tools required.</p>
+            <h2 class="heading3">4 Dedicated Portals, 1 Platform</h2>
+           
 
             <div class="fourth-container">
 
@@ -305,10 +308,10 @@
                     <h3 class="heading4">Teacher</h3>
                     <ul class="card-list">
                         <li><i class="fa-regular fa-circle-check"></i> Batch Management</li>
-                    <li><i class="fa-regular fa-circle-check"></i> Mark Attendance</li>
-                    <li><i class="fa-regular fa-circle-check"></i> Assign & Grade Tasks</li>
-                    <li><i class="fa-regular fa-circle-check"></i> AI Auto-Grading Rubrics</li>
-                    <li><i class="fa-regular fa-circle-check"></i> Upload Lecture Videos</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Mark Attendance</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Assign & Grade Tasks</li>
+                        <li><i class="fa-regular fa-circle-check"></i> AI Auto-Grading Rubrics</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Upload Lecture Videos</li>
                     </ul>
                 </div>
                 <!-- 3 -->
@@ -316,162 +319,165 @@
                 <div class=" student-card ">
                     <h3 class="heading4">Student</h3>
                     <ul class="card-list">
-                       <li><i class="fa-regular fa-circle-check"></i> AI Doubt Solver Chat</li>
-                    <li><i class="fa-regular fa-circle-check"></i> Voice & Vision Homework Help</li>
-                    <li><i class="fa-regular fa-circle-check"></i> View Attendance & Marks</li>
-                    <li><i class="fa-regular fa-circle-check"></i> Submit Tasks Online</li>
-                    <li><i class="fa-regular fa-circle-check"></i> AI Code Review Sandbox</li>
+                        <li><i class="fa-regular fa-circle-check"></i> AI Doubt Solver Chat</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Voice & Vision Homework Help</li>
+                        <li><i class="fa-regular fa-circle-check"></i> View Attendance & Marks</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Submit Tasks Online</li>
+                        <li><i class="fa-regular fa-circle-check"></i> AI Code Review Sandbox</li>
                     </ul>
                 </div>
 
                 <!-- 4 -->
 
-                <div class=" psrent-card">
-                    <h3 class="heading4">Psrent</h3>
+                <div class=" Parent-card">
+                    <h3 class="heading4">Parent</h3>
                     <ul class="card-list">
                         <li><i class="fa-regular fa-circle-check"></i> Child Progress Overview</li>
-                    <li><i class="fa-regular fa-circle-check"></i> PDF Report Card Download</li>
-                    <li><i class="fa-regular fa-circle-check"></i> Fee Payment History</li>
-                    <li><i class="fa-regular fa-circle-check"></i> Attendance Alerts</li>
-                    <li><i class="fa-regular fa-circle-check"></i> AI Study Plan Generator</li>
+                        <li><i class="fa-regular fa-circle-check"></i> PDF Report Card Download</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Fee Payment History</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Attendance Alerts</li>
+                        <li><i class="fa-regular fa-circle-check"></i> AI Study Plan Generator</li>
                     </ul>
                 </div>
             </div>
     </section>
 
-    <section class="five-section">
-      <div class="card5-container">
-         <h2 class="heading3">Built with Modern Tech</h2>
+    <section class="five-section" id="tech-stack">
+        <div class="card5-container">
+            <h2 class="heading3">Built with Modern Tech</h2>
             <p class="para3">Production-grade architecture with type safety, automated testing, and CI/CD pipelines.</p>
-      </div>
-        
-<!-- 1 -->
- <div class="main-five">
-      <div class="five">
-          <h3 class="heading3">Next.js 16</h3>
-          <p class="para3">App Router</p>
-      </div>
-      <!-- 2 -->
+        </div>
 
-      <div class="five">
-          <h3 class="heading3">React 19</h3>
-          <p class="para3">Server Components</p>
-      </div>
-      <!-- 3 -->
-             <div class="five">
-          <h3 class="heading3">TypeScript</h3>
-          <p class="para3">Full Type Safety</p>
-      </div>
-      <!-- 4 -->
-             <div class="five">
-          <h3 class="heading3">PostgreSQL</h3>
-          <p class="para3">Neon / Supabase</p>
-      </div>
-      <!-- 5 -->
-             <div class="five">
-          <h3 class="heading3">Prisma 7</h3>
-          <p class="para3">Type-Safe ORM</p>
-      </div>
-      <!-- 6 -->
-             <div class="five">
-          <h3 class="heading3">NextAuth v5</h3>
-          <p class="para3">Authentication</p>
-      </div>
-      <!-- 7 -->
-             <div class="five">
-          <h3 class="heading3">Redis</h3>
-          <p class="para3">Rate Limiting</p>
-      </div>
-      <!-- 8 -->
-             <div class="five">
-          <h3 class="heading3">Groq AI</h3>
-          <p class="para3">Llama-3 + Vision</p>
-      </div>
-      <!-- 9 -->
-             <div class="five">
-          <h3 class="heading3">Recharts</h3>
-          <p class="para3">Data Visualization</p>
-      </div>
-      <!-- 10 -->
-        <div class="five">
-          <h3 class="heading3">Cloudinary</h3>
-          <p class="para3">Media CDN</p>
-      </div>
-      <!-- 11 -->
-       <div class="five">
-          <h3 class="heading3">TailwindCSS 4</h3>
-          <p class="para3">Utility-First CSS</p>
-      </div>
-      <!-- 12 -->
-        <div class="five">
-          <h3 class="heading3">Groq AI</h3>
-          <p class="para3">E2E Testing</p>
-      </div>
-    </div>
+        <!-- 1 -->
+        <div class="main-five">
+            <div class="five">
+                <h3 class="heading3">Next.js 16</h3>
+                <p class="para3">App Router</p>
+            </div>
+            <!-- 2 -->
+
+            <div class="five">
+                <h3 class="heading3">React 19</h3>
+                <p class="para3">Server Components</p>
+            </div>
+            <!-- 3 -->
+            <div class="five">
+                <h3 class="heading3">TypeScript</h3>
+                <p class="para3">Full Type Safety</p>
+            </div>
+            <!-- 4 -->
+            <div class="five">
+                <h3 class="heading3">PostgreSQL</h3>
+                <p class="para3">Neon / Supabase</p>
+            </div>
+            <!-- 5 -->
+            <div class="five">
+                <h3 class="heading3">Prisma 7</h3>
+                <p class="para3">Type-Safe ORM</p>
+            </div>
+            <!-- 6 -->
+            <div class="five">
+                <h3 class="heading3">NextAuth v5</h3>
+                <p class="para3">Authentication</p>
+            </div>
+            <!-- 7 -->
+            <div class="five">
+                <h3 class="heading3">Redis</h3>
+                <p class="para3">Rate Limiting</p>
+            </div>
+            <!-- 8 -->
+            <div class="five">
+                <h3 class="heading3">Groq AI</h3>
+                <p class="para3">Llama-3 + Vision</p>
+            </div>
+            <!-- 9 -->
+            <div class="five">
+                <h3 class="heading3">Recharts</h3>
+                <p class="para3">Data Visualization</p>
+            </div>
+            <!-- 10 -->
+            <div class="five">
+                <h3 class="heading3">Cloudinary</h3>
+                <p class="para3">Media CDN</p>
+            </div>
+            <!-- 11 -->
+            <div class="five">
+                <h3 class="heading3">TailwindCSS 4</h3>
+                <p class="para3">Utility-First CSS</p>
+            </div>
+            <!-- 12 -->
+            <div class="five">
+                <h3 class="heading3">Playwright</h3>
+                <p class="para3">E2E Testing</p>
+            </div>
+        </div>
     </section>
 
     <section class="rating-container">
 
-       <div class="rate-heading">
-        <h2>Trusted by Coaching Institutes</h2>
-       </div>
-
-     <div class="review">
-
-        <div class="rating">
-            <p class="icon">⭐⭐ ⭐⭐ ⭐</p>
-            <p class="para4">"The AI doubt solver has reduced our WhatsApp query load by 80%. Students get instant answers at midnight before exams."</p>
-            <div class="main-dp">
-              <p class="dp">S</p>
-              <h4>Soni Verma</h4>
-              <p class="info">Director, Excel Academy</p>
-            </div>
+        <div class="rate-heading">
+            <h2>Trusted by Coaching Institutes</h2>
         </div>
 
-        <div class="rating">
-            <p class="icon">⭐⭐ ⭐⭐ ⭐</p>
-            <p class="para4">"Fee collection used to take 3 days of manual tracking. Now it's automated with SMS reminders and online payments."</p>
-            <div class="main-dp">
-              <p class="dp">S</p>
-              <h4>Shreya vaerma</h4>
-              <p class="info">Owner, Patel Coaching Centre</p>
-            </div>
-        </div>
+        <div class="review">
 
-        
-        <div class="rating">
-            <p class="icon">⭐⭐ ⭐⭐ ⭐</p>
-            <p class="para4">"Parents love the branded PDF report cards. It makes our small coaching center look as professional as a big institute."</p>
-            <div class="main-dp">
-              <p class="dp">S</p>
-              <h4>Siya Verma</h4>
-              <p class="info">Teacher, Sunrise Classes</p>
+            <div class="rating">
+                <p class="icon">⭐⭐ ⭐⭐ ⭐</p>
+                <p class="para4">"The AI doubt solver has reduced our WhatsApp query load by 80%. Students get instant
+                    answers at midnight before exams."</p>
+                <div class="main-dp">
+                    <p class="dp">S</p>
+                    <h4>Soni Verma</h4>
+                    <p class="info">Director, Excel Academy</p>
+                </div>
+            </div>
+
+            <div class="rating">
+                <p class="icon">⭐⭐ ⭐⭐ ⭐</p>
+                <p class="para4">"Fee collection used to take 3 days of manual tracking. Now it's automated with SMS
+                    reminders and online payments."</p>
+                <div class="main-dp">
+                    <p class="dp">S</p>
+                    <h4>Shreya verma</h4>
+                    <p class="info">Owner, Patel Coaching Centre</p>
+                </div>
+            </div>
+
+
+            <div class="rating">
+                <p class="icon">⭐⭐ ⭐⭐ ⭐</p>
+                <p class="para4">"Parents love the branded PDF report cards. It makes our small coaching center look as
+                    professional as a big institute."</p>
+                <div class="main-dp">
+                    <p class="dp">S</p>
+                    <h4>Siya Verma</h4>
+                    <p class="info">Teacher, Sunrise Classes</p>
+                </div>
             </div>
         </div>
-     </div>
     </section>
 
 
     <!-- footer -->
     <section class="cta-section">
-    <div class="cta-card">
+        <div class="cta-card">
 
-        <i class="fa-solid fa-bolt"></i>
+            <i class="fa-solid fa-bolt"></i>
 
-        <h2>Ready to Transform Your Coaching Institute?</h2>
+            <h2>Ready to Transform Your Coaching Institute?</h2>
 
-        <p>
-            Join the next generation of smart coaching centers.
-            Set up in minutes, not months.
-        </p>
+            <p>
+                Join the next generation of smart coaching centers.
+                Set up in minutes, not months.
+            </p>
 
-        <button class="cta-btn">
-            Start Now — Free Setup
-            <span>→</span>
-        </button>
+            <button class="cta-btn">
+                Start Now — Free Setup
+                <span>→</span>
+            </button>
 
-    </div>
-</section>
+        </div>
+    </section>
 </body>
 
 </html>

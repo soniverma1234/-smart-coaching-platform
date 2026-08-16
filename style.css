@@ -17,7 +17,7 @@
   border-bottom: 1px solid #eee;
 }
 
-nav.show {
+/* nav.show {
   display: flex;
   position: absolute;
   top: 75px;
@@ -30,7 +30,7 @@ nav.show {
   background: white;
   border-bottom: 1px solid white;
 
-}
+} */
 
 
 /* Logo============ */
@@ -69,13 +69,20 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #666;
+  /* color: #666; */
+  
   font-family: Georgia, serif;
   font-size: clamp(13px, 1.2vw, 16px);
+  color: black;
 }
 
 nav a:hover {
   color: #009f70;
+}
+nav.show a {
+    color: black;
+    font-weight: 900;
+
 }
 
 /* Login Button=========== */
@@ -181,13 +188,13 @@ h1 {
   border: none;
   background: #009f70;
   color: white;
+  text-decoration: none;
   padding: 10px 16px;
   border-radius: 12px;
   font-family: Georgia, serif;
   font-size: clamp(16px, 1.2vw, 16px);
   cursor: pointer;
   box-shadow: 0 8px 18px rgba(0, 159, 112, 0.2);
-
 }
 
 .Started-btn:hover {
@@ -207,15 +214,16 @@ h1 {
 }
 
 .Explore-btn {
+  text-decoration: none;
   order: none;
-  background-color: #eee;
+  background-color: #eeeeeecf;
   color: #666666;
   padding: 10px 16px;
   border-radius: 12px;
   font-family: Georgia, serif;
   font-size: clamp(16px, 1.2vw, 16px);
   cursor: pointer;
-  box-shadow: 0 8px 18px rgba(0, 159, 112, 0.2);
+  box-shadow: 0 8px 18px rgba(0, 159, 111, 0.192);
 }
 
 .Explore-btn:hover {
@@ -291,6 +299,7 @@ h1 {
   .Explore-btn {
     width: 100%;
   }
+
 
   .hero-stats {
     gap: 20px;
@@ -375,18 +384,12 @@ h1 {
 
 .heading3 {
   text-align: center;
-  padding-top: 60px;
+  padding-top: 360px;
   color: #111;
 }
 
-.para3 {
-  text-align: center;
-  line-height: 1.5;
-  color: #666;
-  margin-top: 10px;
-  margin-bottom: 60px;
-}
-/* responsive------ */
+
+responsive------
 
 @media (max-width: 992px) {
   .features-container {
@@ -609,8 +612,9 @@ h1 {
 
 .heading3 {
   text-align: center;
-  padding-top: 60px;
+  padding-top: 0px;
   color: #111;
+  padding-bottom: 40px;
 }
 
 .para3 {
@@ -683,7 +687,7 @@ h1 {
     min-height: 270px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
-.psrent-card{
+.Parent-card{
    background: white;
     border: 1px solid #e5e5e5;
     border-top: 4px solid #e65100 ;
